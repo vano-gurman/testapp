@@ -36,4 +36,9 @@ public class TestClass {
 		model.addAttribute("sum", firstNumber + secondNumber);
 		return "calculations";
 	}
+
+	@GetMapping("/test")
+	public String test() {
+		return "test";
+	}
 }
